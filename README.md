@@ -23,12 +23,12 @@ Real-time messaging app built with microservices.
 ![RabbitMQ Dashboard](screenshots/RabbitMQdash.png)
 
 ## Quick Start
-
+```
 git clone https://github.com/toheheart/Microsocket.git
 cd Microsocket
 make setup
 make test
-
+```
 ## Project Structure
 ```
 microsocket/
