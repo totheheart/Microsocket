@@ -1,2 +1,2 @@
 # Microsocket
-messaging app microservices architecture
+Real-time messaging platform with microservices
