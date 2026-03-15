@@ -1,40 +1,46 @@
 # Microsocket
 
-Real-time messaging platform built with microservices architecture.
+Real-time messaging app built with microservices.
 
-## Services
-- Auth Service - User registration & login
-- User Service - Profiles & presence
-- Message Service - WebSocket messaging
-- Delivery Worker - Async message delivery
-- Notification Worker - Push notifications
+![Tests Passing](screenshots/testOutput.png)
 
-## Tech Stack
-- Python/FastAPI
-- PostgreSQL
-- Redis
-- RabbitMQ
-- Docker
-- GitHub Actions
+## What's Working (Week 1)
+
+**Infrastructure:**
+- ✅ PostgreSQL running on port 5432
+- ✅ Redis running on port 6379  
+- ✅ RabbitMQ running on ports 5672 & 15672
+
+![Docker Containers](screenshots/liveDockerContainers.png)
+
+**Verified:**
+- All containers up
+- Databases responding
+- Message queue accessible
+- Test script passes
+
+![Redis Test](screenshots/redisWorking.png)
+![RabbitMQ Dashboard](screenshots/RabbitMQdash.png)
 
 ## Quick Start
-```bash
-# Clone and setup
-git clone https://github.com/totheheart/microsocket.git
-cd microsocket
 
-# Start infrastructure
+git clone https://github.com/toheheart/Microsocket.git
+cd Microsocket
 make setup
+make test
 
-# Check running services
-docker-compose ps
+## Project Structure
+```
+microsocket/
+├── services/     # API services
+├── workers/      # Background workers
+├── scripts/      # Test scripts
+└── screenshots/  # Documentation
+```
+## Tech
 
-## 📸 Screenshots
+Python, FastAPI, PostgreSQL, Redis, RabbitMQ, Docker
 
-*Coming soon!*
+---
 
-<!-- 
-Add your screenshots here later:
-![Docker Containers](screenshots/docker-ps.png)
-![RabbitMQ Dashboard](screenshots/rabbitmq.png)
--->
+*Starting Auth Service next*
